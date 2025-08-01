@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Darna - Services à domicile</title>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      background-color: #f8f9fa;
+    }
+
+    .welcome-section {
+      text-align: center;
+      margin-top: 10px;
+      margin-bottom: 40px;
+    }
+
+    .welcome-title {
+      font-size: 2.5rem;
+      color: #b83280;
+      font-weight: 700;
+      margin: 0;
+    }
+
+    .slogan {
+      font-size: 1.5rem;
+      color: #555;
+      margin-top: 10px;
+      font-style: italic;
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    header h1 {
+      text-align: center;
+      color: #b83280;
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin: 30px 0 20px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover img {
+      transform: scale(1.05);
+    }
+
+    .icon {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin: 10px 0;
+      transition: color 0.3s ease;
+    }
+    .icon:hover {
+      color: #962965;
+      cursor: default;
+    }
+
+    .desc {
+      font-size: 0.95rem;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      background: #b83280;
+      color: #fff;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn:hover, .btn:focus {
+      background: #962965;
+      outline: none;
+    }
+    .btn:focus {
+      outline: 3px solid #962965;
+      outline-offset: 2px;
+    }
+
+    /* Comment ça marche */
+    .how-card {
+      border: 2px dashed #b83280;
+      background-color: #fef3f8;
+      padding: 10px;
+      border-radius: 30px;
+      text-align:center;
+      font-size: 30px;
+    }
+    .how-card h3 {
+      color: #b83280;
+      margin-bottom: 15px;
+      font-weight: 700;
+      
+    }
+    .how-steps {
+      list-style: none;
+      padding-left: 0;
+      font-size: 20px;
+      color: #333;
+    }
+    .how-steps li {
+      margin-bottom: 8px;
+    }
+
+    /* Pourquoi choisir Darna */
+    .why-card {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align:center;
+    }
+    .why-card h3 {
+      color: #b83280;
+      margin-bottom: 15px;
+      font-weight: 700;
+      font-size: 30px;
+    }
+    .why-choose {
+      list-style: none;
+      padding-left: 0;
+      font-size: 1rem;
+      color: #333;
+    }
+    .why-choose li {
+      margin-bottom: 10px;
+      font-size: 20px;
+    }
+
+    /* Avis clients */
+    .review-section {
+      text-align: center;
+      padding: 40px 20px;
+      max-width: 600px;
+      margin: 0 auto 60px;
+      background-color: #f9f9f9;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .review-section h2 {
+      font-size: 1.8rem;
+      color: #b83280;
+      margin-bottom: 25px;
+      font-weight: 700;
+    }
+    .review-card {
+      background: white;
+      padding: 25px 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      font-style: italic;
+      color: #444;
+    }
+   
+  
+   
+  </style>
+</head>
+<body>
+  <div class="welcome-section">
+    <h2 class="welcome-title">Bienvenue chez Darna</h2>
+    <p class="slogan">Le meilleur pour votre maison, à chaque instant ❤️.</p>
+  </div>
+
+  <header>
+    <h1>Nos Services</h1>
+  </header>
+
+  <div class="container">
+    <!-- Baby-sitting -->
+    <div class="card">
+      <img src="assets/byby.PNG" alt="Service de baby-sitting pour enfants" />
+      <div class="icon">👶 Baby-sitting</div>
+      <div class="desc">Prise en charge des enfants, garde, jeux éducatifs et accompagnement scolaire.</div>
+      <a routerLink="/agent" class="btn">Voir plus</a>
+    </div>
+
+    <!-- Cuisine -->
+    <div class="card">
+      <img src="assets/cn.PNG" alt="Aide en cuisine" />
+      <div class="icon">👩🍳 Aide en cuisine</div>
+      <div class="desc">Préparation des repas, aide culinaire, cuisine familiale à domicile.</div>
+      <a routerLink="" class="btn">Voir plus</a>
+    </div>
+
+    <!-- Beauté -->
+    <div class="card">
+      <img src="assets/c.PNG" alt="Beauté à domicile" />
+      <div class="icon">💇‍♀️ Beauté à domicile</div>
+      <div class="desc">Coiffure, manucure, soins visage et détente directement chez vous.</div>
+      <a routerLink="/agent" class="btn">Voir plus</a>
+    </div>
+
+    <!-- Maintenance -->
+    <div class="card">
+      <img src="assets/rb.PNG" alt="Petites réparations" />
+      <div class="icon">🧰 Petites réparations</div>
+      <div class="desc">Plomberie, électricité, bricolage et maintenance de base.</div>
+      <a routerLink="/agent" class="btn">Voir plus</a>
+    </div>
+
+    <!-- Assistance Senior -->
+    <div class="card">
+      <img src="assets/gr.PNG" alt="Assistance aux personnes âgées" />
+      <div class="icon">🧓 Assistance aux personnes âgées</div>
+      <div class="desc">Aide à domicile, soins légers, accompagnement et soutien moral.</div>
+      <a routerLink="/agent" class="btn">Voir plus</a>
+    </div>
+
+    <!-- Ménage -->
+    <div class="card">
+      <img src="assets/mn.PNG" alt="Ménage" />
+      <div class="icon">🧹 Ménage</div>
+      <div class="desc">Nettoyage quotidien, repassage, et entretien complet de la maison.</div>
+      <a routerLink="/agent" class="btn">Voir plus</a>
+    </div>
+
+    <!-- Comment ça marche -->
+    <div class="card how-card">
+      <h3> Comment ça marche ?</h3>
+      <ul class="how-steps">
+        <li>1️⃣ Choisissez un service</li>
+        <li>2️⃣ Planifiez votre rendez-vous</li>
+        <li>3️⃣ Recevez une confirmation</li>
+        <li>4️⃣ Profitez chez vous 🏡</li>
+      </ul>
+    </div>
+
+    <!-- Pourquoi choisir Darna -->
+    <div class="card why-card">
+      <h3>Pourquoi choisir Darna ?</h3>
+      <ul class="why-choose">
+        <li>✅ Prestataires de confiance</li>
+        <li>⏱️ Disponibilité 7j/7</li>
+        <li>🔒 Paiement 100% sécurisé</li>
+        <li>📞 Un service client réactif</li>
+      </ul>
+    </div>
+  </div>
+  <!-- Avis clients -->
+ 
+
+</body>
+</html>

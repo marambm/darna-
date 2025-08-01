@@ -1,0 +1,152 @@
+
+ 
+ .welcome-section {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  color: #b83280;
+  font-weight: 700;
+  margin: 0;
+}
+
+.slogan {
+  font-size: 1.2rem;
+  color: #555;
+  margin-top: 10px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+header h1 {
+  text-align: center;
+  color: #b83280;
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin: 30px 0 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.icon {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 10px 0;
+}
+
+.desc {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background: #b83280;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #962965;
+}
+.reviews {
+  text-align: center;
+  padding: 40px 20px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 800px;
+  position: relative;
+}
+
+.reviews h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+}
+
+.review-card {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  transition: opacity 0.5s ease-in-out;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review-card.active {
+  opacity: 1;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: gold;
+  margin: 10px 0;
+}
+
+.slider-controls button {
+  background: #d1005a;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+}
+

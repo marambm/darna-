@@ -1,0 +1,114 @@
+body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 30px;
+      background: linear-gradient(to right, #f8e1f4, #e0f0ff);
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    .title {
+      color: #34495e;
+      margin-bottom: 40px;
+      font-size: 2.5em;
+      animation: slideDown 1s ease;
+    }
+
+    .grid-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      opacity: 0;
+      animation: fadeIn 1s ease-in-out 0.6s forwards;
+    }
+
+    .card {
+      background: white;
+      border-radius: 15px;
+      width: 280px;
+      padding: 20px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      transition: transform 0.4s, box-shadow 0.3s;
+      opacity: 0;
+      animation: fadeUp 0.8s ease forwards;
+    }
+
+    .card:nth-child(1) { animation-delay: 0.4s; }
+    .card:nth-child(2) { animation-delay: 0.6s; }
+    .card:nth-child(3) { animation-delay: 0.8s; }
+    .card:nth-child(4) { animation-delay: 1s; }
+    .card:nth-child(5) { animation-delay: 1.2s; }
+    .card:nth-child(6) { animation-delay: 1.4s; }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      margin: 0;
+      color: #2c3e50;
+    }
+
+    .card p.experience {
+      font-weight: bold;
+      color: #888;
+      margin: 10px 0;
+    }
+
+    .details {
+      text-align: left;
+      font-size: 0.92em;
+      padding-left: 15px;
+      color: #555;
+    }
+
+    .btn {
+      display: inline-block;
+      margin: 8px 5px;
+      padding: 10px 18px;
+      border: none;
+      border-radius: 30px;
+      background: linear-gradient(45deg, #6fb1fc, #f59ec4);
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.2s;
+    }
+
+    .btn:hover {
+      background: linear-gradient(45deg, #4a90e2, #ff71b0);
+      transform: scale(1.05);
+    }
+
+    .btn.contact {
+      background: linear-gradient(45deg, #ff71b0, #6fb1fc);
+    }
+
+    .btn.contact:hover {
+      background: linear-gradient(45deg, #f4599e, #3498db);
+    }
+
+    /* Animations */
+    @keyframes slideDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }

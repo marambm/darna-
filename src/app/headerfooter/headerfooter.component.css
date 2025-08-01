@@ -1,0 +1,11 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex-grow: 1; /* occupe tout l’espace disponible entre header et footer */
+  padding-top: 0; /* si ton header est sticky, ajoute margin-top égale à la hauteur du header */
+  /* Exemple : margin-top: 64px; */
+}
